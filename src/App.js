@@ -1,11 +1,12 @@
 
-import './App.css';
-
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Routes/Router/routes';
 function App() {
   return (
-    <div className="">
-    {/* <p>E-shefa</p> */}
-    <p>This is Mr. Md. Mamun Uddin</p>
+
+    <div className=''>
+      <RouterProvider router={router}>
+</RouterProvider>
     </div>
   );
 }
